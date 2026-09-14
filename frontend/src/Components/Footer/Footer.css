@@ -1,0 +1,160 @@
+/* ================================
+   SHOPPER FOOTER
+================================ */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 20px 30px;
+    background: #ffffff;
+    color: #252525;
+}
+
+
+/* ================================
+   FOOTER LOGO
+================================ */
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-logo img {
+    width: 70px;
+    height: auto;
+}
+
+.footer-logo p {
+    color: #383838;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+/* ================================
+   FOOTER LINKS
+================================ */
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #252525;
+    font-size: 18px;
+}
+
+.footer-links li {
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.footer-links li:hover {
+    color: #ff4141;
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   SOCIAL MEDIA ICONS
+================================ */
+
+.footer-social-icon {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background: #fbfbfb;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.footer-icon-container img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.footer-icon-container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ================================
+   COPYRIGHT SECTION
+================================ */
+
+.footer-copyright {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-copyright hr {
+    width: 80%;
+    height: 0;
+    border: none;
+    border-top: 2px solid #c7c7c7;
+}
+
+.footer-copyright p {
+    margin: 0;
+    color: #555;
+    font-size: 15px;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+    .footer {
+        gap: 30px;
+        padding: 40px 15px 25px;
+    }
+
+    .footer-logo img {
+        width: 55px;
+    }
+
+    .footer-logo p {
+        font-size: 28px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 20px;
+        font-size: 16px;
+    }
+
+    .footer-copyright {
+        width: 95%;
+    }
+
+    .footer-copyright p {
+        text-align: center;
+        font-size: 13px;
+    }
+}
